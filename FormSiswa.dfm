@@ -349,7 +349,7 @@ object Form_siswa: TForm_siswa
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45100.703932048600000000
-    ReportOptions.LastChange = 45106.412520914350000000
+    ReportOptions.LastChange = 45106.447455439800000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -378,13 +378,29 @@ object Form_siswa: TForm_siswa
       TopMargin = 10.000000000000000000
       BottomMargin = 10.000000000000000000
       object ReportTitle1: TfrxReportTitle
-        Height = 22.677180000000000000
+        Height = 34.015770000000000000
         Top = 18.897650000000000000
         Width = 980.410082000000000000
+        object Memo25: TfrxMemoView
+          Left = 291.023810000000000000
+          Width = 219.212740000000000000
+          Height = 26.456710000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Style = []
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'LAPORAN DATA SISWA')
+          ParentFont = False
+          VAlign = vaCenter
+        end
       end
       object MasterData1: TfrxMasterData
         Height = 30.236240000000000000
-        Top = 158.740260000000000000
+        Top = 170.078850000000000000
         Width = 980.410082000000000000
         DataSet = frxDBlaporan
         DataSetName = 'frxDBlaporan'
@@ -394,7 +410,6 @@ object Form_siswa: TForm_siswa
           Width = 34.015770000000000000
           Height = 30.236240000000000000
           ShowHint = False
-          DataField = 'id_siswa'
           DataSet = frxDBlaporan
           DataSetName = 'frxDBlaporan'
           Font.Charset = DEFAULT_CHARSET
@@ -405,7 +420,7 @@ object Form_siswa: TForm_siswa
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBlaporan."id_siswa"]')
+            '[Line]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -632,7 +647,7 @@ object Form_siswa: TForm_siswa
       end
       object PageHeader1: TfrxPageHeader
         Height = 34.015770000000000000
-        Top = 64.252010000000000000
+        Top = 75.590600000000000000
         Width = 980.410082000000000000
         object Memo1: TfrxMemoView
           Left = 3.779530000000000000
