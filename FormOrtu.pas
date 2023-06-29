@@ -182,7 +182,7 @@ begin
 id:=dg1.DataSource.DataSet.FieldByName('id_ortu').AsString;
 zqry1.SQL.Clear;
 zqry1.SQL.Add(' delete from tabel_ortu where id_ortu="'+id+'"');
-zqry1.ExecSQL;
+zqry1. ExecSQL;
 zqry1.SQL.Clear;
 zqry1.SQL.Add('select * from tabel_ortu');
 zqry1.Open;

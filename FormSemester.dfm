@@ -327,7 +327,7 @@ object Form_Semester: TForm_Semester
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45101.545964409700000000
-    ReportOptions.LastChange = 45106.798578217590000000
+    ReportOptions.LastChange = 45106.860188680560000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -731,7 +731,6 @@ object Form_Semester: TForm_Semester
           Width = 98.267780000000000000
           Height = 18.897650000000000000
           ShowHint = False
-          DataField = 'tingkat_kela'
           DataSet = frxDBsem
           DataSetName = 'frxDBsem'
           Font.Charset = DEFAULT_CHARSET
@@ -742,7 +741,7 @@ object Form_Semester: TForm_Semester
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBsem."tingkat_kela"]')
+            '[frxDBsem."tingkat_kelas"]')
           ParentFont = False
         end
       end
