@@ -3,13 +3,15 @@ program TugasAkhir;
 uses
   Forms,
   Menu in 'Menu.pas' {FormMenu},
-  FormSiswa in 'FormSiswa.pas' {Form1};
+  FormSiswa in 'FormSiswa.pas' {Form_siswa},
+  FormWaliKelas in 'FormWaliKelas.pas' {Form_walikelas};
 
 {$R *.res}
 
 begin
   Application.Initialize;
+  Application.CreateForm(TForm_walikelas, Form_walikelas);
+  Application.CreateForm(TForm_siswa, Form_siswa);
   Application.CreateForm(TFormMenu, FormMenu);
-  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

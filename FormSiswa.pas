@@ -9,7 +9,7 @@ uses
   DBGrids;
 
 type
-  TForm1 = class(TForm)
+  TForm_siswa = class(TForm)
     lbl1: TLabel;
     lbl2: TLabel;
     lbl3: TLabel;
@@ -62,14 +62,14 @@ type
   end;
 
 var
-  Form1: TForm1;
+  Form_siswa: TForm_siswa;
   id : string;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.editbersih;
+procedure TForm_siswa.editbersih;
 begin
 Edt1.Clear;
 Edt2.Clear;
@@ -84,7 +84,7 @@ Edt10.Clear;
 Edt7.Clear;
 end;
 
-procedure TForm1.editenable;
+procedure TForm_siswa.editenable;
 begin
 Edt1.Enabled:=True;
 Edt2.Enabled:=True;
@@ -99,7 +99,7 @@ Edt10.Enabled:=True;
 Edt7.Enabled:=True;
 end;
 
-procedure TForm1.posisiawal;
+procedure TForm_siswa.posisiawal;
 begin
 editbersih;
 
@@ -122,7 +122,7 @@ btn4.Enabled:= False;
 btn5.Enabled:= False;
 end;
 
-procedure TForm1.btn1Click(Sender: TObject);
+procedure TForm_siswa.btn1Click(Sender: TObject);
 begin
 editbersih;
 
@@ -135,7 +135,7 @@ btn5.Enabled:= True;
 editenable;
 end;
 
-procedure TForm1.btn2Click(Sender: TObject);
+procedure TForm_siswa.btn2Click(Sender: TObject);
 begin
 if (Edt1.Text= '')or (Edt2.Text ='')or (Edt3.Text= '')or (Edt4.Text ='') or (Edt5.Text= '')or (Edt6.Text ='') or (c1.Text= '')or (Edt8.Text= '') or (Edt9.Text= '') or (Edt10.Text= '') or (Edt7.Text= '')then
 begin
@@ -161,7 +161,7 @@ posisiawal;
 end;
 end;
 
-procedure TForm1.btn3Click(Sender: TObject);
+procedure TForm_siswa.btn3Click(Sender: TObject);
 begin
 if (Edt1.Text= '')or (Edt2.Text ='')or (Edt3.Text= '')or (Edt4.Text ='') or (Edt5.Text= '')or (Edt6.Text ='') or (c1.Text= '')or (Edt8.Text= '') or (Edt9.Text= '')or (Edt10.Text= '') or (Edt7.Text= '')then
 begin
@@ -186,7 +186,7 @@ posisiawal;
 end;
 end;
 
-procedure TForm1.btn4Click(Sender: TObject);
+procedure TForm_siswa.btn4Click(Sender: TObject);
 begin
 if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
 begin
@@ -206,17 +206,17 @@ posisiawal;
 end;
 end;
 
-procedure TForm1.btn5Click(Sender: TObject);
+procedure TForm_siswa.btn5Click(Sender: TObject);
 begin
 posisiawal;
 end;
 
-procedure TForm1.FormShow(Sender: TObject);
+procedure TForm_siswa.FormShow(Sender: TObject);
 begin
 posisiawal;
 end;
 
-procedure TForm1.dbgrd1CellClick(Column: TColumn);
+procedure TForm_siswa.dbgrd1CellClick(Column: TColumn);
 begin
 editenable;
 btn1.Enabled:= true;
@@ -238,7 +238,7 @@ Edt10.Text:= zqry1.FieldList[10].AsString;
 Edt7.Text:= zqry1.FieldList[11].AsString;
 end;
 
-procedure TForm1.btn6Click(Sender: TObject);
+procedure TForm_siswa.btn6Click(Sender: TObject);
 begin
 frxlapor.ShowReport();
 end;
