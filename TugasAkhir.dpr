@@ -16,6 +16,7 @@ uses
 
 begin
   Application.Initialize;
+  Application.CreateForm(TForm_Semester, Form_Semester);
   Application.CreateForm(TForm_hubungan, Form_hubungan);
   Application.CreateForm(TForm_kelas, Form_kelas);
   Application.CreateForm(TForm_ortu, Form_ortu);
@@ -24,6 +25,5 @@ begin
   Application.CreateForm(TForm_walikelas, Form_walikelas);
   Application.CreateForm(TForm_siswa, Form_siswa);
   Application.CreateForm(TFormMenu, FormMenu);
-  Application.CreateForm(TForm_Semester, Form_Semester);
   Application.Run;
 end.
