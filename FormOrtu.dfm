@@ -1,6 +1,6 @@
 object Form_ortu: TForm_ortu
-  Left = 192
-  Top = 125
+  Left = 233
+  Top = 126
   Width = 870
   Height = 450
   Caption = 'Form Ortu'
