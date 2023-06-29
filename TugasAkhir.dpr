@@ -7,12 +7,14 @@ uses
   FormWaliKelas in 'FormWaliKelas.pas' {Form_walikelas},
   FormUser in 'FormUser.pas' {Form_User},
   FormPoin in 'FormPoin.pas' {Form_Poin},
-  FormOrtu in 'FormOrtu.pas' {Form_ortu};
+  FormOrtu in 'FormOrtu.pas' {Form_ortu},
+  FormKelas in 'FormKelas.pas' {Form_kelas};
 
 {$R *.res}
 
 begin
   Application.Initialize;
+  Application.CreateForm(TForm_kelas, Form_kelas);
   Application.CreateForm(TForm_ortu, Form_ortu);
   Application.CreateForm(TForm_Poin, Form_Poin);
   Application.CreateForm(TForm_User, Form_User);
